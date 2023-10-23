@@ -10,6 +10,7 @@ const contentType = {
 // 서버 생성
 const server = http.createServer(function(request, response) {
  if(request.method === 'GET' && request.url === '/') {
+  // 200:정상적으로 응답
   response.writeHead(200, contentType);
   response.end(HTMLTemplate);
  } else {
