@@ -3,6 +3,7 @@ const http = require('http');
 // HTML-model 모듈 불러오기 (내가 만든 외부모듈 불러오기)
 const HTMLTemplate = require('./model/HTML-model');
 
+
 const contentType = {
   'Content-Type' : 'text/html',
   'charset' : 'utf-8',
