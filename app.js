@@ -2,13 +2,12 @@
 const http = require('http');
 // HTML-model 모듈 불러오기 (내가 만든 외부모듈 불러오기)
 const HTMLTemplate = require('./model/HTML-model');
-
-
+// Content-type:html
 const contentType = {
   'Content-Type' : 'text/html',
   'charset' : 'utf-8',
 }
-
+// 서버 생성
 const server = http.createServer(function(request, response) {
  if(request.method === 'GET' && request.url === '/') {
   response.writeHead(200, contentType);
